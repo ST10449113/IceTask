@@ -37,4 +37,5 @@ Hope of Living is a community-focused website intended to share information abou
 Open `index.html` in a web browser, or use a local development server.
 
 ## Author
-Student project – WEDE5020
+Ntuli Siziphiwe 
+ST10449113
