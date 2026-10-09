@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiries | Hope of Living</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Hope <span>of Living</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a class="active" href="enquiry.html">Enquiries</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <p class="eyebrow">WE'RE HERE TO HELP</p>
+            <h1>Make an Enquiry</h1>
+            <p>Ask about products, services, volunteering or sponsorship.</p>
+        </section>
+
+        <section class="section form-section">
+            <div class="form-intro">
+                <p class="eyebrow">LET'S TALK</p>
+                <h2>What would you like to know?</h2>
+                <p>Complete the form below. Required fields must be filled
+                   in before your enquiry can be processed.</p>
+                <div class="notice">
+                    <strong>Need general assistance?</strong>
+                    <p>For general messages, visit our
+                       <a href="contact.html">Contact Us page</a>.</p>
+                </div>
+            </div>
+
+            <form id="enquiryForm" class="website-form">
+                <label for="enquiryName">Full name *</label>
+                <input type="text" id="enquiryName" name="name"
+                       autocomplete="name" required minlength="2">
+
+                <label for="enquiryEmail">Email address *</label>
+                <input type="email" id="enquiryEmail" name="email"
+                       autocomplete="email" required>
+
+                <label for="enquiryType">Type of enquiry *</label>
+                <select id="enquiryType" name="enquiryType" required>
+                    <option value="">Select an option</option>
+                    <option value="Cultural wear">Cultural wear or products</option>
+                    <option value="Services">Services</option>
+                    <option value="Volunteering">Volunteering</option>
+                    <option value="Sponsorship">Sponsorship</option>
+                </select>
+
+                <label for="enquiryDetails">Tell us what you need *</label>
+                <textarea id="enquiryDetails" name="details" rows="5"
+                          required minlength="10"
+                          placeholder="Include the product, service or opportunity you are asking about."></textarea>
+
+                <button class="button button-orange" type="submit">
+                    Submit Enquiry
+                </button>
+
+                <p class="form-note">* Required fields</p>
+                <div id="enquiryResponse" class="form-response"
+                     role="status" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="index.html">Hope <span>of Living</span></a>
+        <p>Building hope and strengthening community.</p>
+        <p>&copy; 2026 Hope of Living. All rights reserved.</p>
+    </footer>
+</body>
+</html>
