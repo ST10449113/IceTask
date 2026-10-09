@@ -3,13 +3,87 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
 -->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Hope of Living</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Hope <span>of Living</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiries</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+            <h1>Contact Us</h1>
+            <p>Send Hope of Living a message or question.</p>
+        </section>
+
+        <section class="section form-section">
+            <div class="form-intro">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h2>Let's start a conversation.</h2>
+                <p>Complete the form with your contact details
+                   and message. Please check your information before
+                   preparing the email.</p>
+
+                <div class="notice">
+                    <strong>Looking for a product or service?</strong>
+                    <p>Use our <a href="enquiry.html">enquiry form</a>
+                       for questions about availability, prices or opportunities.</p>
+                </div>
+            </div>
+
+            <form id="contactForm" class="website-form">
+                <label for="contactName">Full name *</label>
+                <input type="text" id="contactName" name="name"
+                       autocomplete="name" required minlength="2">
+
+                <label for="contactEmail">Email address *</label>
+                <input type="email" id="contactEmail" name="email"
+                       autocomplete="email" required>
+
+                <label for="messageType">Type of message *</label>
+                <select id="messageType" name="messageType" required>
+                    <option value="">Select a message type</option>
+                    <option value="General question">General question</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Partnership">Partnership</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="contactMessage">Your message *</label>
+                <textarea id="contactMessage" name="message" rows="6"
+                          required minlength="10"
+                          placeholder="Write your full message here."></textarea>
+
+                <button class="button button-orange" type="submit">
+                    Prepare Email
+                </button>
+
+                <p class="form-note">* Required fields</p>
+                <div id="contactResponse" class="form-response"
+                     role="status" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="index.html">Hope <span>of Living</span></a>
+        <p>Building hope and strengthening community.</p>
+        <p>&copy; 2026 Hope of Living. All rights reserved.</p>
+    </footer>
+</body>
 </html>
